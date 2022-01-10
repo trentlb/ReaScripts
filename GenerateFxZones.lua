@@ -92,8 +92,8 @@ for trackIdx=0, numTracks do
           local paramCount = reaper.TrackFX_GetNumParams( selectedTrack, i );
           
           
-          --if there are more than 8 params, prepare to create subzones.
-          local totalZones = math.ceil(paramCount / 8);
+          --if there are more than faderCount params, prepare to create subzones.
+          local totalZones = math.ceil(paramCount / faderCount);
           --reaper.ShowMessageBox('totalZones for '..name..': ', totalZones,0);
           
           
